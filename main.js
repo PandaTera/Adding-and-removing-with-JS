@@ -4,6 +4,7 @@ let number = 1;
 const addElement = function (){
   
   const div = document.createElement('div')
+  
  div.textContent = number;
   document.body.appendChild(div);
   number++;
@@ -13,7 +14,8 @@ const addElement = function (){
     div.className ="circle"
   }
   const clearElement = function (){
-    document.body.removeChild(div);
+  number = 1;
+   document.body.removeChild(div);
 }
 
 clear.addEventListener('click', clearElement)
